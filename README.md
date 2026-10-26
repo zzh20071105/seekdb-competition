@@ -21,7 +21,7 @@
 | 实例版本 | `5.7.25-OceanBase seekdb-v1.4.0.0` |
 | SQL 验证 | `select 1` → `1`；`select version()` → 上述版本行 |
 | telemetry 路径 | 容器内 `/var/lib/seekdb/run/telemetry.json` |
-| **遥测 ID** | **`60cd144e-a195-81b5-b1ae-0d8baac9a155`** |
+| **遥测 ID** | **`602481c9-c11e-8601-8760-e4886989c362`** |
 
 ## 三、复现步骤
 
