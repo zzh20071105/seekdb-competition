@@ -8,4 +8,10 @@
 - SQL 验证：select 1 → 1 ｜ version() → 5.7.25-OceanBase seekdb-v1.4.0.0
 - telemetry 文件：/var/lib/seekdb/run/telemetry.json（容器内）
 - content.id（遥测 ID，提交用）：
-  60cd144e-a195-81b5-b1ae-0d8baac9a155
+  602481c9-c11e-8601-8760-e4886989c362
+
+## 变更记录
+- 2026-10-26 04:14 UTC：原实例（ID 60cd144e-…）在提测平台查询不到上报记录，
+  docker restart 不会重新上报（日志显示 Already initialized，telemetry.json 未重写），
+  故 docker rm -f 后以 --dns 223.5.5.5 --restart unless-stopped 重建实例，
+  新实例遥测 ID 为 602481c9-c11e-8601-8760-e4886989c362。
